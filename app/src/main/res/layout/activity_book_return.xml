@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".BookReturn">
+
+        <Button
+            android:id="@+id/ReturnBookSubmit"
+            android:layout_width="140dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="100dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toStartOf="@+id/home4"
+            app:layout_constraintHorizontal_bias="0.689"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BookReturnDate" />
+
+        <Button
+            android:id="@+id/home4"
+            android:layout_width="140dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="44dp"
+            android:text="Home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BookReturnDateBtn" />
+
+        <Button
+            android:id="@+id/BookReturnDateBtn"
+            android:layout_width="80dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="368dp"
+            android:layout_marginEnd="76dp"
+            android:text="Tab for Date "
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ReturnBookId"
+            android:layout_width="248dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Enten Book Id"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bluecolor" />
+
+        <EditText
+            android:id="@+id/ReturnRollNo"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Enter Roll No."
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ReturnBookId" />
+
+        <EditText
+            android:id="@+id/BookReturnDate"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="368dp"
+            android:ems="10"
+            android:hint="Book Return Date "
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/BookReturnDateBtn"
+            app:layout_constraintHorizontal_bias="0.739"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#200B97"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/bluecolor"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="235dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="80dp"
+            android:text="BOOK RETURN"
+            android:textColor="#F8F5F5"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
